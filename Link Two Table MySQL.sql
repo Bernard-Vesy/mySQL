@@ -1,0 +1,2 @@
+  SELECT `Processor`, ProcModel.* FROM `Inventory` 
+  LEFT JOIN ProcModel ON (Inventory.Processor like CONCAT('%', ProcModel.Modčle, '%') and Inventory.Processor like CONCAT('%', ProcModel.Fabricant, '%'))
